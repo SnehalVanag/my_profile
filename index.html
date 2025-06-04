@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snehal Vanage | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Moving background -->
+  <div id="particles-js"></div>
+
+  <header class="p-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-green-400">&lt; Snehal Vanage /&gt;</h1>
+    <nav class="space-x-4">
+      <a href="#home" class="hover:text-green-400"><i class="fas fa-home"></i> Home</a>
+      <a href="#about" class="hover:text-green-400"><i class="fas fa-user"></i> About</a>
+      <a href="#projects" class="hover:text-green-400"><i class="fas fa-code"></i> Projects</a>
+    </nav>
+  </header>
+
+  <section id="home" class="flex flex-col md:flex-row items-center justify-between px-10 py-20">
+    <div>
+      <p class="text-lg">WELCOME TO MY PORTFOLIO! 👋</p>
+      <h2 class="text-4xl font-bold mt-4">Snehal <span class="text-green-400">Vanage</span></h2>
+      <p class="text-green-400 mt-2">Business Analyst | Curious Learner</p>
+      <div class="mt-6 space-x-4 text-2xl">
+        <a href="https://github.com/SnehalVanag" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/snehal-vanage-a95b29220/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:snehalvanage57@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="mt-10 md:mt-0">
+<img src="images/programmer.gif" alt="My GIF" />
+    </div>
+  </section>
+
+  <section id="about" class="px-10 py-16 bg-gray-800 bg-opacity-80">
+    <h3 class="text-3xl font-bold text-green-400 mb-6">About Me</h3>
+    <p class="max-w-2xl">
+      Detail-oriented and analytical Business Analyst with experience in software development, requirement gathering, and process optimization.
+      Skilled in Python, SQL, Power BI, Tableau, and documentation. Passionate about bridging business needs with technical solutions.
+    </p>
+  </section>
+
+  <section id="projects" class="px-10 py-16">
+    <h3 class="text-3xl font-bold text-green-400 mb-6">Projects</h3>
+    <ul class="space-y-4">
+      <li>
+        <strong class="text-white">Titan – Watch Assembly Optimization</strong><br />
+        Used Six Sigma to reduce defect rate from 7% to 1.5%. Tools: Excel, MySQL, NodeJS
+      </li>
+      <li>
+        <strong class="text-white">Infusive – Healthcare Inventory Management</strong><br />
+        Defined requirements, validated scenarios with Cypress. Tools: Angular, MongoDB
+      </li>
+      <li>
+        <strong class="text-white">Time Tracker – Employee Management</strong><br />
+        Documented system with role-based access. Tools: Angular, PostgreSQL, Express
+      </li>
+    </ul>
+  </section>
+
+  <footer class="text-center p-6 text-gray-400">
+    &copy; 2025 Snehal Vanage.
+  </footer>
+
+  <!-- Particles.js script -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#00ff99" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00ff99",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          random: false,
+          out_mode: "bounce"
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
